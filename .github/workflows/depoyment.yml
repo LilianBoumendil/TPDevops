@@ -40,7 +40,6 @@ jobs:
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'my-azure-app'
-        slot-name: 'production'
+        app-name: 'my-azure-app'        
         publish-profile: ${{ secrets.lilian.boumendil2024@campus-eni.fr }}
         images: '${{ secrets.lilian999 }}/my-app:${{ github.sha }}'
